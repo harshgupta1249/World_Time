@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lib/services/time.dart';
+import 'package:world_time/services/time.dart';
 
 class Loading extends StatefulWidget {
   @override
