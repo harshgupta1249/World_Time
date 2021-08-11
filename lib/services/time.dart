@@ -4,11 +4,11 @@ import 'dart:convert';
 class WorldTime {
 
   String location; //location name for UI
-  String time; //time at location
+  String time=''; //time at location
   String flag; //url to flag icon
   String url; //location url for API endpoint
 
-  WorldTime({this.location, this.flag, this.url});
+  WorldTime({required this.location, required this.flag, required this.url});
 
   Future<void> getTime() async {
 
@@ -37,10 +37,6 @@ class WorldTime {
       print('caught error : $e');
       time = 'could not update time';
     }
-
-
-    //make the request
-    
 
   }
 
