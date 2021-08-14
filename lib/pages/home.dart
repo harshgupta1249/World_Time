@@ -42,6 +42,13 @@ class _HomeState extends State<Home> {
                   )
                 ],
               ),
+              SizedBox(height: 20.0),
+              Text(
+                data['time'],
+                style: TextStyle(
+                  fontSize: 60.0,
+                ),
+              ),
             ],
           ),
         ),
