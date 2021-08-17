@@ -52,7 +52,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         itemCount: locations.length,
         itemBuilder : (context, index){
           return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 1.0, horizontal: 4.0),
+            padding: const EdgeInsets.symmetric(vertical: 3.0, horizontal: 4.0),
             child: Card(
               child: ListTile(
                 onTap: () {updateTime(index);},
