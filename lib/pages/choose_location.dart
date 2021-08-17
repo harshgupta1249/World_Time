@@ -19,6 +19,19 @@ class _ChooseLocationState extends State<ChooseLocation> {
     WorldTime(url: 'Asia/Jakarta', location: 'Jakarta', flag: 'indonesia.jpg'),
   ];
 
+  void updateTime(index) async {
+    WorldTime instance = locations[index];
+    await instance.getTime();
+
+    //navigate to home screen
+    Navigator.pop(context, {
+      'location': instance.location,
+      'flag' : instance.flag,
+      'time' : instance.time,
+      'isDaytime' : instance.isDaytime,
+    });
+  }
+
   @override
   void initState() {
     super.initState();
